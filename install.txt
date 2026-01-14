@@ -15,6 +15,8 @@ echo ""
 # ==========================================================
 APP_NAME="pdfguard"
 WAR_URL="https://onprempdf.com/war/pdfguard.war"
+WAR_SHA256="547abadc5aaf27f6544a9fdfed1a31c1214a28a062b81c3048d31ad8c33f328c"
+
 TOMCAT_USER="tomcat"
 TOMCAT_GROUP="tomcat"
 TOMCAT_DIR="/opt/tomcat"
@@ -160,6 +162,18 @@ chmod 600 "${TOMCAT_CONF}/tomcat-users.xml"
 # ==========================================================
 log "Download WAR"
 curl -fL "$WAR_URL" -o "$WAR_LOCAL"
+
+log "Verify WAR checksum"
+DOWNLOADED_SHA256="$(sha256sum "$WAR_LOCAL" | awk '{print $1}')"
+
+if [ "$DOWNLOADED_SHA256" != "$WAR_SHA256" ]; then
+  echo "ERROR: SHA256 mismatch!"
+  echo "Expected: $WAR_SHA256"
+  echo "Got:      $DOWNLOADED_SHA256"
+  exit 1
+fi
+
+log "WAR checksum OK"
 
 systemctl stop tomcat9 || true
 rm -rf "${TOMCAT_WEBAPPS:?}/${APP_NAME}"*
