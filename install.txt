@@ -41,6 +41,21 @@ require_root() {
 require_root
 
 
+if systemctl list-unit-files | grep -q '^tomcat9\.service'; then
+  echo "[pdfguard] ❌ Tomcat9 service already exists. Aborting."
+  exit 1
+fi
+
+if [ -d "/opt/tomcat" ]; then
+  echo "[pdfguard] ❌ /opt/tomcat already exists. Aborting."
+  exit 1
+fi
+
+# Optional: laufender Tomcat
+if systemctl is-active --quiet tomcat9; then
+  echo "[pdfguard] ❌ Tomcat9 is running. Aborting."
+  exit 1
+fi
 
 
 log "Prepare temp dir"
