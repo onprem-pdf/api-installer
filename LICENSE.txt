@@ -1,32 +1,17 @@
+OnPrem PDF API – Proprietary License
 
----
-
-# 📄 `LICENSE.txt` (Commercial License)
-
-```txt
-OnPrem PDF API – Commercial License
-
-Copyright (c) 2026
+Copyright (c) 2026 OnPremPdf
 
 This software is proprietary.
 
-Permission is granted to the purchaser to install and use the software
-on their own servers according to the purchased license.
+Permission is granted to the purchaser to install and use this software
+on their own infrastructure in accordance with the purchased license.
 
-The software may not be:
-- redistributed
-- resold
-- sublicensed
-- shared
-- published
-- reverse engineered
-
-without explicit written permission from the copyright holder.
-
-The Lite edition is free for evaluation and limited production use.
-
-The On-Prem Engine license allows unlimited PDF generation on one
-company’s infrastructure.
+The software may not be redistributed, resold, sublicensed, shared,
+published, or reverse engineered, except where permitted by applicable law.
 
 This software is provided "as is", without warranty of any kind.
-The author is not liable for damages arising from the use of this software.
+In no event shall the copyright holder be liable for any damages
+arising from the use of this software.
+
+This license is governed by the laws of Germany.
