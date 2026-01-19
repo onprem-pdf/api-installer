@@ -5,10 +5,11 @@ set -euo pipefail
 # DISCLAIMER
 # ==========================================================
 echo "=========================================================="
-echo "PDFGuard ist ein einfaches PDF-Rendering Tool fuer Tomcat."
-echo "Dieses Skript wird Tomcat und die PDFGuard-Anwendung installieren."
+echo "PDFGuard is a simple PDF rendering tool for Tomcat."
+echo "This script will install Tomcat and the PDFGuard application."
 echo "=========================================================="
 echo ""
+
 
 # ==========================================================
 # CONFIG
@@ -212,17 +213,17 @@ systemctl start tomcat9
 IP="$(hostname -I | awk '{print $1}')"
 echo ""
 echo "=========================================================="
-echo "Installation abgeschlossen!"
+echo "Installation completed!"
 echo ""
 echo "PDFGuard API:"
 echo "http://${IP}:8080/pdfguard/api/v1/render"
 echo ""
-echo "Administrationsoberflaeche:"
+echo "Administration interface:"
 echo "http://${IP}:8080/pdfguard/"
 echo ""
-echo "Admin Login:"
-echo "Benutzer: ${ADMIN_USER}"
-echo "Passwort: ${ADMIN_PASS}"
+echo "Admin login:"
+echo "Username: ${ADMIN_USER}"
+echo "Password: ${ADMIN_PASS}"
 echo ""
-echo "Bitte speichern Sie dieses Passwort jetzt. Es wird nicht erneut angezeigt."
+echo "Please save this password now. It will not be shown again."
 echo "=========================================================="
