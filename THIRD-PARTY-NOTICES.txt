@@ -1,6 +1,13 @@
-OnPrem PDF API includes third-party software components.
+Third-Party Notices
 
+OnPrem PDF API includes third-party software components.
 These components are licensed separately under their own licenses.
+
+---
+
+OpenHTMLtoPDF
+
+Licensed under the GNU Lesser General Public License (LGPL)
 
 ---
 
