@@ -1,17 +1,20 @@
 OnPrem PDF API – Proprietary License
 
-Copyright (c) 2026 OnPremPdf
+Copyright (c) 2026 OnPrem PDF
 
-This software is proprietary.
+This software is proprietary and confidential.
 
-Permission is granted to the purchaser to install and use this software
-on their own infrastructure in accordance with the purchased license.
+Permission is granted to the licensee to install and use this software
+solely on their own infrastructure, in accordance with the terms of the
+purchased license agreement.
 
-The software may not be redistributed, resold, sublicensed, shared,
-published, or reverse engineered, except where permitted by applicable law.
+The software may not be redistributed, resold, sublicensed, transferred,
+shared, published, modified, or reverse engineered, except to the extent
+permitted by applicable law.
 
-This software is provided "as is", without warranty of any kind.
-In no event shall the copyright holder be liable for any damages
+This software is provided "as is", without warranty of any kind, express or
+implied. In no event shall the copyright holder be liable for any damages
 arising from the use of this software.
 
-This license is governed by the laws of Germany.
+This license shall be governed by and construed in accordance with the
+laws of the Federal Republic of Germany.
