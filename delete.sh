@@ -1,9 +1,11 @@
 sudo bash -c '
 set -e
 
-echo "[cleanup] Stop Tomcat"
+
 echo "[cleanup] This will completely remove PDFGuard, Tomcat and the Java runtime installed by this script."
 echo "[cleanup] Do not run on systems where Java is required by other applications."
+
+echo "[cleanup] Stop Tomcat"
 
 systemctl stop tomcat9 2>/dev/null || true
 systemctl disable tomcat9 2>/dev/null || true
