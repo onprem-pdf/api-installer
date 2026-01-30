@@ -16,7 +16,7 @@ echo ""
 # ==========================================================
 APP_NAME="pdfguard"
 WAR_URL="https://onprempdf.com/war/pdfguard.war"
-WAR_SHA256="7f2241a4e1cefa122f5c0f22c045ec98bb522c8b475a07b1546a993eeb611777"
+WAR_SHA256="2f6e17b91ed1f22b59340fb52110b3aa88fbc3b4eb626f10911a95f87e007e95"
 
 TOMCAT_USER="tomcat"
 TOMCAT_GROUP="tomcat"
