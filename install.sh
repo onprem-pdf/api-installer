@@ -105,7 +105,9 @@ chmod +x "${TOMCAT_DIR}/bin/"*.sh
 rm -rf "${TOMCAT_WEBAPPS}/manager" \
        "${TOMCAT_WEBAPPS}/host-manager" \
        "${TOMCAT_WEBAPPS}/examples" \
-       "${TOMCAT_WEBAPPS}/ROOT"
+       "${TOMCAT_WEBAPPS}/ROOT" \
+       "${TOMCAT_WEBAPPS}/docs"
+
 
 
 # ==========================================================
